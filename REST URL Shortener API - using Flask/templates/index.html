@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>URL Shortener</title>
+  </head>
+  <body>
+    <h1>URL Shortener</h1>
+    <form method="post" action="{{ url_for('create_short_url') }}">
+      <label for="url">Original URL:</label>
+      <input type="text" name="url" id="url" required>
+      <br>
+      <label for="custom_name">Custom short name (optional):</label>
+      <input type="text" name="custom_name" id="custom_name">
+      <br>
+      <input type="submit" value="Shorten URL">
+    </form>
+  </body>
+</html>
